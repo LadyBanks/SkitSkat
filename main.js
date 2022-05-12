@@ -1,7 +1,7 @@
 //decide whether to play for pennies, nickels, dimes, or quarters
 //each player begins with three of the chosen coin (they get to play on mercy after coins are gone)
 //put money in pot
-//status of the money pot
+//status of the money pot .
 //status of all players monies
 //one unique deck of cards (already shuffled)
 let deckID = ''
