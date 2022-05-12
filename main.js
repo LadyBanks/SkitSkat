@@ -17,7 +17,7 @@ fetch(`https://deckofcardsapi.com/api/deck/new/draw/?count=1`)
     console.log(`error ${err}`)
 });
 
-//mark dealer
+//mark dealer hi
 //function to unhide cards once they are dealt, will call within the deal function
 function unhideCards(){
   document.querySelectorAll('.card').forEach(function (card) {
