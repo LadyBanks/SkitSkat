@@ -6,50 +6,71 @@
     	<meta name="keywords" content="one, two, three">
 
 		<title>Skit Skat Card Game!</title>
-
+		<link rel="icon" type="image/png" href="favicon.png">
 		<!-- external CSS link -->
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
 
 		<h1>Skit Skat</h1>
-
+		<section id="roundInfo" class = "hidden label">
+			<h3 id="dealer"></h3>
+			<h3 id="pot"></h3>
+		</section>
+		<h3 class = "label hidden" id="availableCardLabel">Top of the Discard Pile</h3>
+		<img class = "upturned card hidden" id="upturnedCard" src="" alt="The card you can choose to take">
+		<h3 class = "label hidden" id="topOfTheDeckLabel">Top of the Deck</h3>
+		<img class = "facedown deck card hidden" id="topOfTheDeck" src="oneCard.png" alt="Facedown card at the top of the deck">
 		<button type="button" name="button">Start the game!</button>
-        <br>
-        <h2 id="textGigisCards"></h2><h2 id="textGrandmasCards"></h2>
+    <br>
+    <h2 id="textGigisCards"></h2>
+		<h2 id="textGrandmasCards"></h2>
+		<div>
         <img class="opponent card hidden" id="gigisCardBacks" src="threeCards.png" alt="three playing cards">
         <img class="opponent card hidden" id="grandmasCardBacks" src="threeCards.png" alt="three playing cards">
+		</div>
 		<h2 id="textYourCards"></h2>
-		<img class = "your card hidden" id="yourFirstCard" src="oneCard.png" alt="playing card">
-		<img class = "your card hidden" id="yourSecondCard" src="oneCard.png" alt="playing card">
-		<img class = "your card hidden" id="yourThirdCard" src="oneCard.png" alt="playing card">
-		<h3>Result</h3>
-
+		<div>
+			<img class = "your card hidden" id="yourFirstCard" src="oneCard.png" alt="playing card">
+			<img class = "your card hidden" id="yourSecondCard" src="oneCard.png" alt="playing card">
+			<img class = "your card hidden" id="yourThirdCard" src="oneCard.png" alt="playing card">
+		</div>
+		<span id="yourPoints"></span>
+		<br>
+		<span id="whatIsHappening"></span>
+		<br>
+		<p><strong>Object of the Game:</strong>
+			<br>
+			<br>Get 31 points or as close to it as possible.
+			<br>Aces are worth 11 points, face cards are worth 10 points, and everything else is face value.
+			<br>Cards must be of the same suit to count towards your total.
+			<br>Example: If you hold the ace of spades, the 7 of spades, and the king of hearts, you have 18 points.
+			<br><br>
+			<strong>How to Play:</strong>
+			<br>
+			<br>Before play begins, all players are given three coins.
+			The dealer deals three cards to each person, and turns one face up in the middle of the table.
+			The player to the dealer's left goes first.
+			<br>
+			<br>On each turn, a player may take the upturned card or the top card from the deck (they are now holding four cards).
+			They will choose one card to discard from their hand (face up) and play will pass clockwise to the next player.
+			<br>
+			<br>Players take turns until one player is satisfied that the value of their hand 
+			will likely be higher than the other players'. The player indicates this by "knocking" on the table when their turn begins.  They do not pick up a new card after knocking.  Play passes to the next player.
+			The other players then get one more turn. Then there is a showdown
+			in which the players simultaneously reveal their hands and compare values.
+			The player with the highest total value of cards (of the same suit) wins, and the player with the lowest hand value must put a coin into the pot (if there is a tie for lowest score, compare who has the highest-ranking card, and if that is the same then both players must put in).  
+			<br>
+			<br>If there is a tie, the player with the highest-ranking card wins.
+			Example: K, Q, 6 (total 26) would beat Q, 9, 7 (also total 26).
+			If there is a tie in the highest cards, the next highest cards are compared, and so on.
+			<br>
+			<br>Any time a player holds exactly 31, they call "Skit Skat" immediately, and all other players must put in a coin.
+			<br>
+			<br>
+			If a player is out of coins, they are on mercy.  If they loose again, they are out of the game.
+			Continue until only one player remains.  The last remaining player wins all of the coins!</p>
 
 		<script type="text/javascript" src="main.js"></script>
 	</body>
 </html>
-Object of the game:  To get 31 points or as to it as possible.  Must be same suit.
-
-Rules: 
-Before play begins, all players put one coin into the pot.
-The dealer deals three cards to each person, and turns one face up in the middle of the table.
-The player to the dealer's left goes first.
-On each turn, a player may take the upturned card or the top card from the deck (they are now holding four cards).
-They will choose one card to discard from their hand (face up) and play will pass clockwise to the next player.
-
-Players take turns until one player is satisfied that the card values they hold
-will likely beat the other players. A player indicates this by "knocking" on the table.
-All other players then get one more turn to exchange cards. Then there is a showdown
-in which the players reveal their hands and compare values.
-The player with the highest total value of cards of the same suit wins the pot.
-
-If there is a tie for the highest score, the player with the highest-ranking card wins the whole pot.
-Example: K, Q, 6 (total 26) would beat Q, 9, 7 (also total 26).
-If there is a tie in the highest cards, the next highest cards are compared, and so on.
-
-Any time a player holds exactly 31, they may "knock" immediately, and they win the pot.
-
-After the pot has been won, all the players put in chips for the next hand.
-If a player is out of coins, they are on mercy.  If they loose again, they are out of the game.
-Continue until only one player remains.

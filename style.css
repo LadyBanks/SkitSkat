@@ -1,6 +1,70 @@
 /*hidding card spaces before they are dealt"*/
+h1 {
+    display: inline-block;
+}
 .hidden {
     display: none;
 }
-.card
+button {
+    display: block;
+}
+#upturnedCard, #availableCardLabel, #topOfTheDeck, #topOfTheDeckLabel, #roundInfo {
+    float: right;
+    clear: right;
+}
+body {
+    margin-left: 3%;
+    margin-right: 3%;
+    background-color: rgb(10, 135, 184);
+    color: white;
+}
+section {
+    float: right;
+    border: 2px solid black;
+    padding: 5px;
+    padding-top: 0px;
+}
+img {
+    max-width: 15%;
+}
+h2 {
+    display: inline;
+}
 
+#grandmasCardBacks {
+    clear:none;
+    margin-left: 5%;
+}
+#textGrandmasCards {
+    margin-left: 5%;
+}
+#yourFirstCard, #yourSecondCard, #yourThirdCard {
+    
+}
+p {
+    clear: both;
+}
+
+span {
+    display: inline-block;
+    max-width: 50%;
+}
+
+/*want to try clamp or calc for font size, if not good make some media queries*/
+
+/*#upturnedCard:hover, #topOfTheDeck:hover {
+    transform: translateX(-20px);
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    /*animation: shake 0.5s;
+  
+    /* When the animation is finished, start again 
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes shake {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(2deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(2deg); }
+    100% { transform: rotate(0deg); }
+  }
