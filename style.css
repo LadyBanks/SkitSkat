@@ -1,6 +1,13 @@
 /*hidding card spaces before they are dealt"*/
 h1 {
     display: inline-block;
+    font-size: calc(1.5em + 2vw);
+}
+h2 {
+    font-size: calc(.75em + 1vw);
+}
+h3 {
+    font-size: calc(.65em + 1vw);
 }
 .hidden {
     display: none;
@@ -25,7 +32,7 @@ section {
     padding-top: 0px;
 }
 img {
-    max-width: 15%;
+    max-width: 18%;
 }
 h2 {
     display: inline;
@@ -50,6 +57,9 @@ span {
     max-width: 50%;
 }
 
+#dealer, #pot {
+    font-size: calc(.5em + 1vw);
+}
 /*want to try clamp or calc for font size, if not good make some media queries*/
 
 /*#upturnedCard:hover, #topOfTheDeck:hover {
@@ -67,4 +77,33 @@ span {
     50% { transform: rotate(0deg); }
     75% { transform: rotate(2deg); }
     100% { transform: rotate(0deg); }
+  }
+
+  
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: rgb(228, 79, 221);
+    color: #444;
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color: rgb(245, 138, 24);
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0 18px;
+    background-color: rgb(116, 186, 232);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
   }
